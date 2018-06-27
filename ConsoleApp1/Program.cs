@@ -18,7 +18,6 @@ using MigraDocCore.DocumentObjectModel.Tables;
 using MigraDocCore.Rendering;
 using PdfSharpCore.Drawing.Layout;
 
-
 namespace PdfSharpCoreSample
 {
     public class Program
@@ -31,8 +30,49 @@ namespace PdfSharpCoreSample
             //ReadPdfContents();
             //CreateBarcode();
             //CreateBarcodeAsText();
-            verticalBarCode();
+            //verticalBarCode();
+            verticalBarCode2();
             Console.WriteLine("Hello World!");
+        }
+
+        public static void verticalBarCode2()
+        {
+            using (PdfDocument document = new PdfDocument())
+            {
+                //create pdf header
+                document.Info.Title = "My barcode";
+                document.Info.Author = "Me";
+                document.Info.Subject = "Barcode";
+                document.Info.Keywords = "Barcode, Ean13";
+                document.Info.CreationDate = DateTime.Now;
+
+                //create new pdf page
+                PdfPage page = document.AddPage();
+                page.Width = XUnit.FromPoint(672);
+                page.Height = XUnit.FromPoint(890);
+
+                using (XGraphics gfx = XGraphics.FromPdfPage(page))
+                {
+                    //make sure the font is embedded
+                    var options = new XPdfFontOptions(PdfFontEncoding.Unicode);
+
+                    //declare a font for drawing in the PDF
+                    XFont fontEan = new XFont("mrvcode39s", 20, XFontStyle.Regular, options);
+                    XTextFormatter tf = new XTextFormatter(gfx);
+                    var stringFormat = new XStringFormat();
+                    stringFormat.Alignment = XStringAlignment.Center;
+
+                    gfx.RotateTransform(-90.0);
+                    //create the barcode from string
+                    var point1 = new XPoint(-20,-20);
+                    var point2 = new XPoint(20, 20);
+                    gfx.DrawString("*12234*", fontEan, XBrushes.Black, new XRect(point1, point2), stringFormat);
+                   
+                }
+
+
+                document.Save("VerticalBarCodeNew.pdf");
+            }
         }
 
         public static void verticalBarCode()
