@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>PdfSharpCoreSample</AssemblyName>
+    <RootNamespace>PdfSharpCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PdfSharpCore" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libraries\PdfSharpCore\MigraDocCore.DocumentObjectModel\MigraDocCore.DocumentObjectModel.csproj" />
+    <ProjectReference Include="..\..\..\libraries\PdfSharpCore\MigraDocCore.Rendering\MigraDocCore.Rendering.csproj" />
+    <ProjectReference Include="..\..\..\libraries\PdfSharpCore\PdfSharpCore\PdfSharpCore.csproj" />
+  </ItemGroup>
+
+</Project>
