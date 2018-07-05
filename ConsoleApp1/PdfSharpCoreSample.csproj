@@ -12,9 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\libraries\PdfSharpCore\MigraDocCore.DocumentObjectModel\MigraDocCore.DocumentObjectModel.csproj" />
-    <ProjectReference Include="..\..\..\libraries\PdfSharpCore\MigraDocCore.Rendering\MigraDocCore.Rendering.csproj" />
-    <ProjectReference Include="..\..\..\libraries\PdfSharpCore\PdfSharpCore\PdfSharpCore.csproj" />
+    <ProjectReference Include="..\Library\PdfSharpCore\MigraDocCore.DocumentObjectModel\MigraDocCore.DocumentObjectModel.csproj" />
+    <ProjectReference Include="..\Library\PdfSharpCore\MigraDocCore.Rendering\MigraDocCore.Rendering.csproj" />
+    <ProjectReference Include="..\Library\PdfSharpCore\PdfSharpCore.Charting\PdfSharpCore.Charting.csproj" />
+    <ProjectReference Include="..\Library\PdfSharpCore\PdfSharpCore\PdfSharpCore.csproj" />
   </ItemGroup>
 
 </Project>

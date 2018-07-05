@@ -4,18 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpCoreSample", "ConsoleApp1\PdfSharpCoreSample.csproj", "{2617DDB7-5751-4509-909F-29657E9DC63B}"
-	ProjectSection(ProjectDependencies) = postProject
-		{D7B8448E-7D19-414E-B1EA-81C2A1CE8775} = {D7B8448E-7D19-414E-B1EA-81C2A1CE8775}
-		{7870CABB-D538-4C01-9D39-1D55AA893E40} = {7870CABB-D538-4C01-9D39-1D55AA893E40}
-	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDocCore.DocumentObjectModel", "..\..\libraries\PdfSharpCore\MigraDocCore.DocumentObjectModel\MigraDocCore.DocumentObjectModel.csproj", "{D7B8448E-7D19-414E-B1EA-81C2A1CE8775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDocCore.DocumentObjectModel", "Library\PdfSharpCore\MigraDocCore.DocumentObjectModel\MigraDocCore.DocumentObjectModel.csproj", "{FBC1AB40-BB4C-41FC-BABF-18C6696B044B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpCore", "..\..\libraries\PdfSharpCore\PdfSharpCore\PdfSharpCore.csproj", "{7870CABB-D538-4C01-9D39-1D55AA893E40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDocCore.Rendering", "Library\PdfSharpCore\MigraDocCore.Rendering\MigraDocCore.Rendering.csproj", "{B360F35E-B605-4D75-92C8-7144131A61DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDocCore.Rendering", "..\..\libraries\PdfSharpCore\MigraDocCore.Rendering\MigraDocCore.Rendering.csproj", "{84D02BA3-5B5E-4E92-A413-1FD4CA53F13F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpCore", "Library\PdfSharpCore\PdfSharpCore\PdfSharpCore.csproj", "{BD175C72-19CC-4BE9-BC56-F412D9438083}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpCore.Charting", "..\..\libraries\PdfSharpCore\PdfSharpCore.Charting\PdfSharpCore.Charting.csproj", "{383C6F10-78E6-47FE-9443-832E45358DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpCore.Charting", "Library\PdfSharpCore\PdfSharpCore.Charting\PdfSharpCore.Charting.csproj", "{7C3A2660-80DE-4EC8-99BA-CB5CA7C4CCF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,22 +23,22 @@ Global
 		{2617DDB7-5751-4509-909F-29657E9DC63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2617DDB7-5751-4509-909F-29657E9DC63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2617DDB7-5751-4509-909F-29657E9DC63B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7B8448E-7D19-414E-B1EA-81C2A1CE8775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7B8448E-7D19-414E-B1EA-81C2A1CE8775}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7B8448E-7D19-414E-B1EA-81C2A1CE8775}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7B8448E-7D19-414E-B1EA-81C2A1CE8775}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7870CABB-D538-4C01-9D39-1D55AA893E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7870CABB-D538-4C01-9D39-1D55AA893E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7870CABB-D538-4C01-9D39-1D55AA893E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7870CABB-D538-4C01-9D39-1D55AA893E40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84D02BA3-5B5E-4E92-A413-1FD4CA53F13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84D02BA3-5B5E-4E92-A413-1FD4CA53F13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84D02BA3-5B5E-4E92-A413-1FD4CA53F13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84D02BA3-5B5E-4E92-A413-1FD4CA53F13F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{383C6F10-78E6-47FE-9443-832E45358DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{383C6F10-78E6-47FE-9443-832E45358DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{383C6F10-78E6-47FE-9443-832E45358DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{383C6F10-78E6-47FE-9443-832E45358DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC1AB40-BB4C-41FC-BABF-18C6696B044B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC1AB40-BB4C-41FC-BABF-18C6696B044B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC1AB40-BB4C-41FC-BABF-18C6696B044B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC1AB40-BB4C-41FC-BABF-18C6696B044B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B360F35E-B605-4D75-92C8-7144131A61DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B360F35E-B605-4D75-92C8-7144131A61DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B360F35E-B605-4D75-92C8-7144131A61DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B360F35E-B605-4D75-92C8-7144131A61DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD175C72-19CC-4BE9-BC56-F412D9438083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD175C72-19CC-4BE9-BC56-F412D9438083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD175C72-19CC-4BE9-BC56-F412D9438083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD175C72-19CC-4BE9-BC56-F412D9438083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3A2660-80DE-4EC8-99BA-CB5CA7C4CCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3A2660-80DE-4EC8-99BA-CB5CA7C4CCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3A2660-80DE-4EC8-99BA-CB5CA7C4CCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3A2660-80DE-4EC8-99BA-CB5CA7C4CCF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
